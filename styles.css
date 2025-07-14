@@ -457,6 +457,47 @@ nav ul li a:hover {
     color: var(--primary);
 }
 
+/* Pricing Notes */
+.pricing-notes {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.note-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid var(--gray-light);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.note-card h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.note-card h4 i {
+    font-size: 1.2rem;
+}
+
+.note-card p {
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
 /* User Journey */
 .user-journey {
     background-color: white;
@@ -903,29 +944,32 @@ footer {
 
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav.active {
         display: block;
-        width: 100%;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
+        padding: 20px;
     }
 
     .mobile-menu-btn {
         display: block;
-        position: absolute;
-        top: 25px;
-        right: 20px;
     }
 
     .grid-cols-2 {
@@ -958,6 +1002,11 @@ footer {
     
     .feature-card > div {
         min-width: 100% !important;
+    }
+    
+    .pricing-notes {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
