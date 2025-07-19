@@ -218,3 +218,46 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
+<script>
+function calculateROI() {
+  const X = parseInt(document.getElementById('calls').value, 10) || 0;
+  const M = parseFloat(document.getElementById('minutes').value) || 0;
+  const R = parseFloat(document.getElementById('revenue').value) || 0;
+  const plan = document.getElementById('plan').value;
+
+  const TotalMinutes = X * M;
+  let Cost = 0;
+  if (plan === 'hourly') {
+    Cost = TotalMinutes * 0.65;
+  } else {
+    if (TotalMinutes <= 300) {
+      Cost = 150;
+    } else {
+      Cost = 150 + (TotalMinutes - 300) * 0.20;
+    }
+  }
+  const Revenue = X * R;
+  const ROI = Cost === 0 ? 0 : ((Revenue - Cost) / Cost) * 100;
+
+  // Results display
+  document.getElementById('result-minutes').textContent = TotalMinutes.toLocaleString();
+  document.getElementById('result-cost').textContent = '$' + Cost.toFixed(2);
+  document.getElementById('result-revenue').textContent = '$' + Revenue.toFixed(2);
+  const roiElem = document.getElementById('result-roi');
+  roiElem.textContent = ROI.toFixed(1) + '%';
+  roiElem.style.color = ROI >= 0 ? 'green' : 'red';
+
+  // ROI bar
+  const roiBar = document.getElementById('roi-bar');
+  let roiPercent = Math.max(-100, Math.min(ROI, 100)); // Clamp for visual
+  roiBar.style.width = Math.abs(roiPercent) + '%';
+  roiBar.style.background = ROI >= 0 ? 'linear-gradient(90deg, #00c853 0%, #009624 100%)' : 'linear-gradient(90deg, #d50000 0%, #b71c1c 100%)';
+
+  document.getElementById('roiResults').style.display = 'block';
+}
+
+// Optional: Update on input change for live update
+['calls', 'minutes', 'revenue', 'plan'].forEach(id => {
+  document.getElementById(id).addEventListener('input', calculateROI);
+});
+</script>
