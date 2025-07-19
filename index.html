@@ -224,6 +224,66 @@
         </div>
     </div>
 </section>
+<!-- ROI & Pricing Calculator Section -->
+<section id="roi-calculator" class="pricing section" style="margin-top: 32px;">
+  <div class="container">
+    <div class="section-title">
+      <h2>📈 ROI & Pricing Calculator</h2>
+      <p>Help users visualize their potential return based on call volume.</p>
+    </div>
+    <div class="roi-calculator-card" style="background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 32px; max-width: 600px; margin: 0 auto;">
+      <form id="roiForm" class="flex flex-col gap-4">
+        <div class="form-group">
+          <label for="calls">Number of calls per month:</label>
+          <input type="number" id="calls" min="0" value="100" required>
+        </div>
+        <div class="form-group">
+          <label for="minutes">Average call duration (minutes):</label>
+          <input type="number" id="minutes" min="1" value="5" required>
+        </div>
+        <div class="form-group">
+          <label for="revenue">Revenue per successful call ($):</label>
+          <input type="number" id="revenue" min="0" value="50" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="plan">Plan Type:</label>
+          <select id="plan">
+            <option value="hourly">Hourly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-lg" onclick="calculateROI()">Calculate ROI</button>
+      </form>
+      <div id="roiResults" style="margin-top: 32px; display: none;">
+        <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+          <div class="result-card">
+            <strong>Total AI Minutes Used:</strong>
+            <div id="result-minutes"></div>
+          </div>
+          <div class="result-card">
+            <strong>Estimated Cost:</strong>
+            <div id="result-cost"></div>
+          </div>
+          <div class="result-card">
+            <strong>Estimated Revenue:</strong>
+            <div id="result-revenue"></div>
+          </div>
+          <div class="result-card">
+            <strong>ROI %:</strong>
+            <div id="result-roi"></div>
+          </div>
+        </div>
+        <!-- Optional ROI Bar -->
+        <div style="margin-top: 20px;">
+          <label for="roi-bar">ROI Visual:</label>
+          <div style="background:#eee; border-radius:10px; height:20px; width:100%; overflow:hidden;">
+            <div id="roi-bar" style="height:100%; width:0%; background:green; transition:width 0.6s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>                
 
     <!-- User Journey Section -->
     <section id="journey" class="user-journey section">
