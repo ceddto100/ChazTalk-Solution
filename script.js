@@ -218,7 +218,7 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
-<script>
+
 function calculateROI() {
   const X = parseInt(document.getElementById('calls').value, 10) || 0;
   const M = parseFloat(document.getElementById('minutes').value) || 0;
@@ -260,4 +260,3 @@ function calculateROI() {
 ['calls', 'minutes', 'revenue', 'plan'].forEach(id => {
   document.getElementById(id).addEventListener('input', calculateROI);
 });
-</script>
