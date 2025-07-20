@@ -1294,27 +1294,103 @@ footer {
         text-align: center;
     }
 }
-.roi-calculator-card .form-group {
-  margin-bottom: 16px;
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
 }
-.roi-calculator-card label {
-  display: block;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-.roi-calculator-card input, .roi-calculator-card select {
+
+.calculator {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  max-width: 600px;
   width: 100%;
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.result-card {
-  flex: 1 1 180px;
-  background: #f8fafd;
+
+.roi-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.calculate-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  background: var(--primary, #1976d2);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
   border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-  min-width: 150px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.calculate-btn:hover {
+  background: var(--primary-dark, #0d47a1);
+}
+
+.results-card {
+  background: #f9fafb;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.results-grid > div strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.roi-bar-wrap {
+  background: #eee;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+#roi-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00c853 0%, #009624 100%);
+  transition: width 0.6s;
+}
+
+@media (min-width: 600px) {
+  .roi-form {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+  }
+  .calculate-btn {
+    grid-column: span 4;
+    width: auto;
+    justify-self: end;
+    max-width: 220px;
+  }
+  .results-grid {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
 }
