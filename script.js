@@ -210,3 +210,19 @@ function calculateROI() {
 ['calls', 'minutes', 'revenue', 'plan'].forEach(id => {
   document.getElementById(id).addEventListener('input', calculateROI);
 });
+document.addEventListener('DOMContentLoaded', function() {
+  // Show the ROI results card with an example positive value
+  document.getElementById('roiResults').style.display = 'block';
+  document.getElementById('result-minutes').textContent = "500";
+  document.getElementById('result-cost').textContent = "$260.00";
+  document.getElementById('result-revenue').textContent = "$585.00";
+  var roiElem = document.getElementById('result-roi');
+  roiElem.textContent = "125.0%";
+  roiElem.style.color = "green";
+  // Optionally, show an ROI bar
+  var roiBar = document.getElementById('roi-bar');
+  if (roiBar) {
+    roiBar.style.width = "100%";
+    roiBar.style.background = "linear-gradient(90deg, #00c853 0%, #009624 100%)";
+  }
+});
