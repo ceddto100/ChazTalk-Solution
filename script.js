@@ -135,57 +135,7 @@ document.querySelector('.testimonial-slider').addEventListener('mouseleave', () 
 // Initialize slider
 goToSlide(0);
 
-// Pricing Calculator
-const calculateBtn = document.getElementById('calculate-btn');
-const estimatedMinutes = document.getElementById('estimated-minutes');
-const planSelect = document.getElementById('plan');
-const costResult = document.getElementById('cost-result');
 
-function calculateCost() {
-    if (!estimatedMinutes || !planSelect || !costResult) return;
-    
-    const minutes = parseFloat(estimatedMinutes.value) || 0;
-    const ratePerMinute = parseFloat(planSelect.value) || 0;
-    
-    if (minutes <= 0) {
-        alert('Please enter a valid number of minutes.');
-        return;
-    }
-    
-    const monthlyCost = minutes * ratePerMinute;
-    costResult.textContent = `$${monthlyCost.toFixed(2)}`;
-    
-    // Add animation to highlight the result
-    const resultContainer = document.getElementById('calculator-result');
-    resultContainer.style.animation = 'none';
-    setTimeout(() => {
-        resultContainer.style.animation = 'pulse 0.5s';
-    }, 10);
-}
-
-// Add keypress event for Enter key
-if (estimatedMinutes) {
-    estimatedMinutes.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            calculateCost();
-        }
-    });
-}
-
-// Calculate button click event
-if (calculateBtn) {
-    calculateBtn.addEventListener('click', calculateCost);
-}
-
-// Auto-calculate on plan change
-if (planSelect) {
-    planSelect.addEventListener('change', calculateCost);
-}
-
-// Calculate initial value
-document.addEventListener('DOMContentLoaded', function() {
-    calculateCost();
-});
 
 // Add scroll reveal animation
 window.addEventListener('scroll', revealOnScroll);
