@@ -14,6 +14,38 @@
     <link rel="manifest" href="/site.webmanifest" />
 
 </head>
+<button onclick="toggleDarkMode()" style="position: fixed; top: 20px; right: 20px; z-index: 999;">
+  🌓 Toggle Dark Mode
+</button>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('manual-dark');
+  }
+</script>
+
+<style>
+  .manual-dark {
+    background-color: #121212 !important;
+    color: #f0f0f0 !important;
+  }
+
+  .manual-dark .area-code-highlight,
+  .manual-dark .tech-partners,
+  .manual-dark .about-section {
+    background-color: #1e1e1e !important;
+  }
+
+  .manual-dark .partner-badge {
+    background-color: #2a2a2a !important;
+    color: #eeeeee !important;
+  }
+
+  .manual-dark .footer-info a,
+  .manual-dark .footer-info p {
+    color: #cccccc !important;
+  }
+</style>
 <body>
     <!-- Header & Navigation -->
     <header id="header">
