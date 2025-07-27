@@ -14,7 +14,27 @@
     <link rel="manifest" href="/site.webmanifest" />
 
 </head>
-<button onclick="toggleDarkMode()" style="position: fixed; top: 20px; right: 20px; z-index: 999;">
+
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="logo">ChazTalk<span>Solutions</span></a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#journey">How It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="cta-button" aria-label="Get a Free Demo">Get Free Demo</a></li>
+                </ul>
+            </nav>
+            <button onclick="toggleDarkMode()" style="position: fixed; top: 20px; right: 20px; z-index: 999;">
   🌓 Toggle Dark Mode
 </button>
 
@@ -46,25 +66,6 @@
     color: #cccccc !important;
   }
 </style>
-<body>
-    <!-- Header & Navigation -->
-    <header id="header">
-        <div class="container flex justify-between items-center">
-            <a href="#" class="logo">ChazTalk<span>Solutions</span></a>
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#journey">How It Works</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="cta-button" aria-label="Get a Free Demo">Get Free Demo</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
