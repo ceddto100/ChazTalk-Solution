@@ -34,8 +34,7 @@
                     <li><a href="#contact" class="cta-button" aria-label="Get a Free Demo">Get Free Demo</a></li>
                 </ul>
             </nav>
-            <button id="darkModeToggle" onclick="toggleDarkMode()">🌓</button>
-
+            
         </div>
     </header>
 
@@ -484,82 +483,7 @@
             </div>
         </div>
     </footer>
-    <script>
-  function toggleDarkMode() {
-    document.body.classList.toggle('manual-dark');
-  }
-</script>
-
-<style>
-  /* Dark Mode Button */
-  #darkModeToggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 999;
-    background-color: #222;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.2s;
-  }
-
-  #darkModeToggle:hover {
-    background-color: #444;
-    transform: scale(1.05);
-  }
-
-  .manual-dark #darkModeToggle {
-    background-color: #eee;
-    color: #111;
-  }
-
-  .manual-dark #darkModeToggle:hover {
-    background-color: #ccc;
-  }
-
-  /* Global dark mode styles */
-  .manual-dark {
-    background-color: #121212 !important;
-    color: #f0f0f0 !important;
-  }
-
-  .manual-dark section,
-  .manual-dark header,
-  .manual-dark footer,
-  .manual-dark .area-code-highlight,
-  .manual-dark .tech-partners,
-  .manual-dark .about-section,
-  .manual-dark .footer-info,
-  .manual-dark .partners-grid,
-  .manual-dark .partner-badge {
-    background-color: #121212 !important;
-    color: #eeeeee !important;
-  }
-
-  .manual-dark .partner-badge {
-    border: 1px solid #333 !important;
-  }
-
-  .manual-dark a {
-    color: #4fc3f7 !important;
-  }
-
-  .manual-dark h1, 
-  .manual-dark h2, 
-  .manual-dark h3, 
-  .manual-dark h4, 
-  .manual-dark h5, 
-  .manual-dark h6 {
-    color: #ffffff !important;
-  }
-</style>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
