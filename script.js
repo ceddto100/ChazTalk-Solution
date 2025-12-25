@@ -206,9 +206,18 @@ function calculateROI() {
   document.getElementById('roiResults').style.display = 'block';
 }
 
+// Calculate button click handler
+const calculateBtn = document.getElementById('calculateBtn');
+if (calculateBtn) {
+  calculateBtn.addEventListener('click', calculateROI);
+}
+
 // Optional: Update on input change for live update
 ['calls', 'minutes', 'revenue', 'plan'].forEach(id => {
-  document.getElementById(id).addEventListener('input', calculateROI);
+  const elem = document.getElementById(id);
+  if (elem) {
+    elem.addEventListener('input', calculateROI);
+  }
 });
 document.addEventListener('DOMContentLoaded', function() {
   // Show the ROI results card with an example positive value

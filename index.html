@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChazTalk Solutions - Automate Customer Calls With AI</title>
+    <title>ChazTalk Solutions - AI-Powered Voice Automation Platform</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Transform your customer service with AI voice automation. 24/7 support, instant lead conversion, multilingual capabilities.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="ChazTalk" />
     <link rel="manifest" href="/site.webmanifest" />
-
 </head>
 
 <body>
     <!-- Header & Navigation -->
     <header id="header">
-        <div class="container flex justify-between items-center">
-            <a href="#" class="logo">ChazTalk<span>Solutions</span></a>
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-robot"></i>
+                ChazTalk
+            </a>
+
             <nav id="nav">
                 <ul>
                     <li><a href="#hero">Home</a></li>
@@ -31,10 +43,15 @@
                     <li><a href="#journey">How It Works</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#contact" class="cta-button" aria-label="Get a Free Demo">Get Free Demo</a></li>
                 </ul>
             </nav>
-            
+
+            <div class="flex items-center" style="gap: var(--space-md);">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -42,308 +59,441 @@
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Automate Customer Calls With AI</h1>
-                <p>ChazTalk Solutions delivers human-like customer service around the clock. Our AI boost sales, answers questions, and resolves issues just like your best agents would – but 24/7 and at a fraction of the cost.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-lg">Request a Demo</a>
-                    <a href="#pricing" class="btn btn-lg btn-outline">Sign Up for Free Trial</a>
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    AI-Powered Voice Platform
                 </div>
-            
-    </section>
-    <!-- Features Section -->
-    <section id="features" class="features section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Powerful AI Integration</h2>
-                <p>Our cutting-edge technology seamlessly connects with your existing systems</p>
+
+                <h1>Automate Customer Calls With AI</h1>
+
+                <p class="hero-subtitle">
+                    Deliver human-like customer service around the clock. Our AI boosts sales, answers questions,
+                    and resolves issues just like your best agents would—but 24/7 and at a fraction of the cost.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i>
+                        Request a Demo
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-chart-line"></i>
+                        View Pricing
+                    </a>
+                </div>
             </div>
-            <div class="flex flex-wrap gap-20">
-                <div class="feature-card" style="width: 100%;">
-                    <div style="display: flex; align-items: center; gap: 30px;">
-                        <div style="flex: 1;">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-bolt"></i>
+                    Features
+                </span>
+                <h2 class="section-title">Powerful AI Integration</h2>
+                <p class="section-description">
+                    Our cutting-edge technology seamlessly connects with your existing systems,
+                    delivering enterprise-grade voice automation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-xl">
+                <!-- Feature 1: Lead Conversion -->
+                <div class="feature-card">
+                    <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
+                        <div>
                             <div class="feature-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <h3>Boosted Lead Conversion 📈</h3>
-                            <p>Why does lead conversion matter?<br>
-                            Generating leads is just the first step—nurturing and converting them into paying customers is where the real challenge lies. Prospective buyers often have questions, hesitations, or require additional information before making a purchase. ChazTalk Solutions helps businesses bridge this gap by providing instant, personalized engagement at critical decision-making moments.</p>
+                            <h3>Boosted Lead Conversion</h3>
+                            <p>
+                                Generating leads is just the first step—nurturing and converting them into paying
+                                customers is where the real challenge lies. Prospective buyers often have questions,
+                                hesitations, or require additional information before making a purchase.
+                            </p>
+                            <p>
+                                ChazTalk Solutions helps businesses bridge this gap by providing instant, personalized
+                                engagement at critical decision-making moments, ensuring no opportunity is lost.
+                            </p>
                         </div>
-                        <div style="flex: 1;">
-    <video controls style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-        <source src="pics/chazvid.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-</div>
+                        <div>
+                            <video controls style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
+                                <source src="pics/chazvid.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
-                <div class="feature-card" style="width: 100%;">
-                    <div style="display: flex; align-items: center; gap: 30px;">
-                        <div style="flex: 1;">
-                            <img src="pics/elevenlabs.jpg" alt="Eleven Labs Voice Synthesis" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+
+                <!-- Feature 2: Automatic Translation -->
+                <div class="feature-card">
+                    <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
+                        <div>
+                            <img src="pics/elevenlabs.jpg" alt="Eleven Labs Voice Synthesis"
+                                 style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                         </div>
-                        <div style="flex: 1;">
+                        <div>
                             <div class="feature-icon">
                                 <i class="fas fa-microphone"></i>
                             </div>
-                            <h3> Automatic Translation</h3>
-                            <p>Deliver human-like speech using advanced voice synthesis that automatically detects and speaks your customer’s language. Engage audiences across the globe with natural-sounding voices in multiple languages and accents—perfect for creating a unified, multilingual brand experience.</p>
+                            <h3>Automatic Translation</h3>
+                            <p>
+                                Deliver human-like speech using advanced voice synthesis that automatically detects
+                                and speaks your customer's language.
+                            </p>
+                            <p>
+                                Engage audiences across the globe with natural-sounding voices in multiple languages
+                                and accents—perfect for creating a unified, multilingual brand experience.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="feature-card" style="width: 100%;">
-                    <div style="display: flex; align-items: center; gap: 30px;">
-                        <div style="flex: 1;">
+
+                <!-- Feature 3: 24/7 Availability -->
+                <div class="feature-card">
+                    <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
+                        <div>
                             <div class="feature-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <h3>24/7 Availability 🌍</h3>
-                            <p>Unlike human agents, ChazTalk Solutions never sleeps, providing instant, round-the-clock support to customers worldwide. Whether answering late-night inquiries, capturing leads outside business hours, or assisting international clients in different time zones, AI ensures no opportunity is missed. By automating routine tasks, businesses reduce operational costs while maintaining consistent, high-quality service across websites, mobile apps, and social media. With seamless, 24/7 engagement, companies can enhance customer satisfaction, boost sales, and stay ahead of competitors. 🚀</p>
+                            <h3>24/7 Availability</h3>
+                            <p>
+                                Unlike human agents, ChazTalk Solutions never sleeps, providing instant, round-the-clock
+                                support to customers worldwide. Whether answering late-night inquiries, capturing leads
+                                outside business hours, or assisting international clients in different time zones,
+                                AI ensures no opportunity is missed.
+                            </p>
+                            <p>
+                                By automating routine tasks, businesses reduce operational costs while maintaining
+                                consistent, high-quality service across websites, mobile apps, and social media.
+                            </p>
                         </div>
-                        <div style="flex: 1;">
-                            <img src="pics/24-7availability.jpg" alt="24/7 Availability" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                        <div>
+                            <img src="pics/24-7availability.jpg" alt="24/7 Availability"
+                                 style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                         </div>
                     </div>
                 </div>
-                <div class="feature-card" style="width: 100%;">
-                    <div style="display: flex; align-items: center; gap: 30px;">
-                        <div style="flex: 1;">
-                            <img src="pics/scalablesolution.jpg" alt="Scalable Solutions" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+
+                <!-- Feature 4: Scalable Solutions -->
+                <div class="feature-card">
+                    <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
+                        <div>
+                            <img src="pics/scalablesolution.jpg" alt="Scalable Solutions"
+                                 style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                         </div>
-                        <div style="flex: 1;">
+                        <div>
                             <div class="feature-icon">
                                 <i class="fas fa-expand-arrows-alt"></i>
                             </div>
-                            <h3>Scalable & Adaptable Solutions 🔄</h3>
-                            <p>Whether you're a startup or an enterprise, ChazTalk Solutions scales effortlessly to match your needs—handling growing customer demand without increasing overhead. It integrates seamlessly with CRMs, e-commerce platforms, and marketing tools, providing real-time, omnichannel support across websites, social media, and messaging apps. Customizable and industry-flexible, it adapts to your business goals, optimizing customer interactions, lead generation, and workflow automation. With 99.9% uptime, faster response times, and up to 60% cost savings, ChazTalk Solutions empowers businesses to scale efficiently while delivering top-tier experiences. 🚀</p>
+                            <h3>Scalable & Adaptable Solutions</h3>
+                            <p>
+                                Whether you're a startup or an enterprise, ChazTalk Solutions scales effortlessly to
+                                match your needs—handling growing customer demand without increasing overhead.
+                            </p>
+                            <p>
+                                It integrates seamlessly with CRMs, e-commerce platforms, and marketing tools, providing
+                                real-time, omnichannel support across websites, social media, and messaging apps. With
+                                99.9% uptime, faster response times, and up to 60% cost savings, ChazTalk Solutions
+                                empowers businesses to scale efficiently while delivering top-tier experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area Code Highlight -->
+            <div class="card" style="margin-top: var(--space-3xl); text-align: center; padding: var(--space-2xl);">
+                <div class="section-badge" style="margin-bottom: var(--space-md);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Local Presence
+                </div>
+                <h3>Choose a Number with Any Area Code</h3>
+                <p style="max-width: 700px; margin: var(--space-md) auto 0;">
+                    Establish your presence anywhere in the U.S.—whether you want a New York vibe with a
+                    <strong>646</strong> number or represent Louisville with a <strong>502</strong>.
+                    ChazTalk gives you the freedom to select a local number that matches your business
+                    identity and builds trust with your customers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
+                <div>
+                    <div class="section-badge" style="margin-bottom: var(--space-md);">
+                        <i class="fas fa-building"></i>
+                        About Us
+                    </div>
+                    <h2>ChazTalk Solutions</h2>
+                    <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                        ChazTalk Solutions transforms your business communication with powerful conversational AI.
+                        Automate customer support, capture more leads instantly, and simplify hiring—all at a
+                        fraction of traditional staffing costs.
+                    </p>
+
+                    <div style="margin-top: var(--space-xl);">
+                        <h4 style="margin-bottom: var(--space-md); color: var(--color-text-secondary);">
+                            Powered by industry-leading technology:
+                        </h4>
+                        <div class="grid grid-cols-3 gap-md">
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">🔊</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">Eleven Labs</div>
+                            </div>
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">📞</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">Twilio</div>
+                            </div>
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">🧠</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">OpenAI GPT-4</div>
+                            </div>
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">🗺️</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">Google Places</div>
+                            </div>
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">⚙️</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">Make.com</div>
+                            </div>
+                            <div class="card" style="padding: var(--space-md); text-align: center;">
+                                <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-xs);">☁️</div>
+                                <div style="font-size: var(--font-size-sm); font-weight: 600;">Google Cloud</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="pics/about.jpeg" alt="ChazTalk Solutions Platform"
+                         style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-dollar-sign"></i>
+                    Pricing
+                </span>
+                <h2 class="section-title">Flexible & Transparent Pricing</h2>
+                <p class="section-description">
+                    Choose the plan that fits your business needs—from pay-as-you-go to enterprise solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-xl">
+                <!-- Minute Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Minute Plan</h3>
+                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">Pay as You Go</p>
+                    </div>
+                    <div class="price">$0.65<span class="price-period">/minute</span></div>
+                    <p style="text-align: center; margin-bottom: var(--space-lg);">
+                        Ideal for light or occasional use.
+                    </p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> No monthly commitment</li>
+                        <li><i class="fas fa-check"></i> Pay only for active AI agent time</li>
+                        <li><i class="fas fa-check"></i> Full access to voice AI</li>
+                        <li><i class="fas fa-check"></i> Standard automation workflows</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Start Now</a>
+                </div>
+
+                <!-- Monthly Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Monthly Plan</h3>
+                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">SMB Growth Plan</p>
+                    </div>
+                    <div class="price">$150<span class="price-period">/month</span></div>
+                    <p style="text-align: center; margin-bottom: var(--space-lg);">
+                        Includes <strong>300 voice minutes/month</strong>
+                    </p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Additional minutes: $0.60/min</li>
+                        <li><i class="fas fa-check"></i> AI voice + SMS support</li>
+                        <li><i class="fas fa-check"></i> Up to 1,000 SMS messages</li>
+                        <li><i class="fas fa-check"></i> 5 automation workflows</li>
+                        <li><i class="fas fa-check"></i> Standard support & dashboard</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Subscribe</a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Business Plan</h3>
+                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">Custom Solutions</p>
+                    </div>
+                    <div class="price">Custom</div>
+                    <p style="text-align: center; margin-bottom: var(--space-lg);">
+                        For high volume or unique requirements
+                    </p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tailored pricing based on usage</li>
+                        <li><i class="fas fa-check"></i> Free evaluation with sales team</li>
+                        <li><i class="fas fa-check"></i> E-commerce platforms (24/7)</li>
+                        <li><i class="fas fa-check"></i> Advanced voice cloning</li>
+                        <li><i class="fas fa-check"></i> Multi-language support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Book Demo</a>
+                </div>
+            </div>
+
+            <!-- Pricing Note -->
+            <div class="card" style="margin-top: var(--space-3xl); text-align: center; padding: var(--space-xl);">
+                <h4 style="margin-bottom: var(--space-sm);">
+                    <i class="fas fa-info-circle"></i> Need help choosing a plan?
+                </h4>
+                <p style="margin-bottom: 0;">
+                    Contact us for a personalized recommendation or to discuss custom solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
+        <div class="container container-narrow">
+            <div class="calculator">
+                <div class="section-header">
+                    <span class="section-badge">
+                        <i class="fas fa-calculator"></i>
+                        ROI Calculator
+                    </span>
+                    <h2 class="section-title">Calculate Your ROI</h2>
+                </div>
+
+                <form id="roi-form" class="calculator-form">
+                    <div class="form-group">
+                        <label for="calls">Calls per Month</label>
+                        <input type="number" id="calls" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="minutes">Avg Call Duration (min)</label>
+                        <input type="number" id="minutes" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="revenue">Revenue per Call ($)</label>
+                        <input type="number" id="revenue" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Plan Type</label>
+                        <select id="plan">
+                            <option value="hourly">Minutes</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+                </form>
+
+                <button type="button" id="calculateBtn" class="btn btn-primary" style="width: 100%; margin-top: var(--space-md);">
+                    <i class="fas fa-chart-bar"></i>
+                    Calculate ROI
+                </button>
+
+                <div id="roiResults" class="calculator-result" style="display: none; margin-top: var(--space-xl);">
+                    <h4>Your Results</h4>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <div class="result-label">Total Minutes</div>
+                            <div id="result-minutes" class="result-value">0</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Cost</div>
+                            <div id="result-cost" class="result-value">$0</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Revenue</div>
+                            <div id="result-revenue" class="result-value">$0</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">ROI</div>
+                            <div id="result-roi" class="result-value">0%</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="area-code-highlight" style="background-color: #f7f7f7; padding: 40px 20px; text-align: center; border-top: 3px solid #007BFF; border-bottom: 3px solid #007BFF;">
-    <h2 style="color: #333; font-size: 24px; margin-bottom: 15px;">
-        📍 Choose a Number with Any Area Code
-    </h2>
-    <p style="color: #555; font-size: 16px; max-width: 700px; margin: 0 auto;">
-        Establish your presence anywhere in the U.S. — whether you want a New York vibe with a <strong>646</strong> number or represent Louisville with a <strong>502</strong>. 
-        ChazTalk gives you the freedom to select a local number that matches your business identity and builds trust with your customers.
-    </p>
-</section>
-
-    <section class="about-section">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        
-        <div class="about-container">
-            <div class="about-content">
-                <h2 style="text-align: center; color: rgb(0, 140, 255);"><span style="color: rgba(0, 0, 0, 0.774);">About</span><br> ChazTalk<span style="color: rgb(17, 0, 114);">Solutions</span></h2>
-                <p class="about-description">
-                    ChazTalk Solutions transforms your business communication with powerful conversational AI. 
-                    Automate customer support, capture more leads instantly, and simplify hiring—all at a fraction of traditional staffing costs.
-                </p>
-                
-                <div class="tech-partners">
-    <h4 style="text-align: center; color: rgba(0, 0, 0, 0.774); text-decoration: underline;">
-        Powered by industry-leading technology:
-    </h4>
-    <div class="partners-grid">
-        <div class="partner-badge">
-            <span class="partner-icon">🔊</span>
-            Eleven Labs
-        </div>
-        <div class="partner-badge">
-            <span class="partner-icon">📞</span>
-            Twilio
-        </div>
-        <div class="partner-badge">
-            <span class="partner-icon">🧠</span>
-            OpenAI GPT-4
-        </div>
-        <div class="partner-badge">
-            <span class="partner-icon">🗺️</span>
-            Google Places
-        </div>
-        <div class="partner-badge">
-            <span class="partner-icon">⚙️</span>
-            Make.com
-        </div>
-        <div class="partner-badge">
-            <span class="partner-icon">☁️</span>
-            Google Cloud Platform (GCP)
-        </div>
-    </div>
-</div>
-
-                
-                <div class="cta-container">
-                    <p class="cta-text">Ready to boost your leads and lower costs?</p>
-                </div>
-                
-            </div>
-            
-            <div class="about-image-container">
-                <img src="pics/about.jpeg" alt="ChazTalk Solutions Platform" class="about-image">
-            </div>
-        </div>
-    </section>
-
-    
-   <!-- Pricing Section -->
-<section id="pricing" class="pricing section">
-    <div class="container">
-        <div class="section-title">
-            <h2>Flexible & Transparent Pricing</h2>
-            <p>Choose the plan that fits your business needs</p>
-        </div>
-        <div class="grid grid-cols-3 pricing-table">
-            <!-- Hourly Plan -->
-            <div class="pricing-card">
-                <h3>🔹 Minute Plan<br><small><em>Pay as You Go</em></small></h3>
-                <div class="price">$0.65<small> per minute</small></div>
-                <p>Ideal for light or occasional use.</p>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check"></i> No monthly commitment</li>
-                    <li><i class="fas fa-check"></i> Pay only for active AI agent time</li>
-                    <li><i class="fas fa-check"></i> Full access to voice AI (Eleven Labs + Twilio)</li>
-                    <li><i class="fas fa-check"></i> Standard automation workflows via n8n</li>
-                </ul>
-                <a href="#contact" class="btn">Start Now</a>
-            </div>
-            <!-- Monthly Plan -->
-            <div class="pricing-card featured">
-                <h3>🔷 Monthly Plan<br><small><em>SMB Growth Plan</em></small></h3>
-                <div class="price">$150<small>/month</small></div>
-                <p>Includes <strong>300 voice minutes per month</strong></p>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check"></i> Additional minutes: <strong>$0.60/min</strong></li>
-                    <li><i class="fas fa-check"></i> AI voice + SMS support</li>
-                    <li><i class="fas fa-check"></i> Up to 1,000 SMS messages</li>
-                    <li><i class="fas fa-check"></i> 5 automation workflows (n8n)</li>
-                    <li><i class="fas fa-check"></i> Standard support & dashboard access</li>
-                </ul>
-                <a href="#contact" class="btn">Subscribe</a>
-            </div>
-            <!-- Business Plan -->
-            <div class="pricing-card">
-                <h3>🟣 Business Plan<br><small><em>Custom Solutions</em></small></h3>
-                <div class="price">Custom</div>
-                <p>For high call volume or unique requirements</p>
-                <ul class="pricing-features">
-                    <li><i class="fas fa-check"></i> Tailored pricing based on usage & integrations</li>
-                    <li><i class="fas fa-check"></i> Free evaluation with our sales team</li>
-                    <li><i class="fas fa-check"></i> Ideal for:
-                        <ul style="margin-left: 1em; list-style: disc;">
-                            <li>E-commerce platforms (24/7 interaction)</li>
-                            <li>Advanced voice cloning or CRM integrations</li>
-                            <li>Regulatory or multi-language needs</li>
-                        </ul>
-                    </li>
-                </ul>
-                <a href="#contact" class="btn">Book a Demo</a>
-            </div>
-        </div>
-        <!-- Optionally, you can add a brief pricing note if needed -->
-        <div class="pricing-notes">
-            <div class="note-card">
-                <h4><i class="fas fa-info-circle"></i> Need help choosing a plan?</h4>
-                <p>Contact us for a personalized recommendation or to discuss custom solutions.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--calculator-->
-<section id="roi-calculator" class="calculator-container">
-  <div class="calculator">
-    <h1 style="text-align:center; color:#0070f3; font-size:2.3rem; margin-bottom: 1rem; margin-top: 2.4rem; font-weight: bold;">
-  Calculate Your ROI
-</h1>
-    <form id="roi-form" class="roi-form">
-      <div class="field">
-        <label for="calls">Number of calls per month</label>
-        <input type="number" id="calls" min="0" required>
-      </div>
-      <div class="field">
-        <label for="minutes">Average call duration (minutes)</label>
-        <input type="number" id="minutes" min="1" required>
-      </div>
-      <div class="field">
-        <label for="revenue">Revenue per call ($)</label>
-        <input type="number" id="revenue" min="0" step="0.01" required>
-      </div>
-      <div class="field">
-        <label for="plan">Plan Type</label>
-        <select id="plan">
-          <option value="hourly">Minutes</option>
-          <option value="monthly">Monthly</option>
-        </select>
-      </div>
-      <button type="button" id="calculateBtn" class="calculate-btn">Calculate ROI</button>
-    </form>
-    <div id="roiResults" class="results-card" style="display: none;">
-      <div class="results-grid">
-        <div>
-          <strong>Total AI Minutes Used:</strong>
-          <div id="result-minutes"></div>
-        </div>
-        <div>
-          <strong>Estimated Cost:</strong>
-          <div id="result-cost"></div>
-        </div>
-        <div>
-          <strong>Estimated Revenue:</strong>
-          <div id="result-revenue"></div>
-        </div>
-        <div>
-          <strong>ROI %:</strong>
-          <div id="result-roi"></div>
-        </div>
-      </div>
-      <div class="roi-bar-wrap">
-        <div id="roi-bar"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
     <!-- User Journey Section -->
-    <section id="journey" class="user-journey section">
+    <section id="journey" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>How It Works</h2>
-                <p>Get started with ChazTalk Solutions in just a few simple steps</p>
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-route"></i>
+                    How It Works
+                </span>
+                <h2 class="section-title">Get Started in 4 Simple Steps</h2>
+                <p class="section-description">
+                    Launch your AI voice automation in minutes with our streamlined onboarding process.
+                </p>
             </div>
-            <div class="journey-steps">
-                <div class="journey-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Sign Up & Create Account</h3>
-                        <p>Create your ChazTalk Solutions account, select your plan, and set up billing information. Our streamlined onboarding process takes just minutes to complete.</p>
+
+            <div class="grid grid-cols-2 gap-xl">
+                <div class="card">
+                    <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+                        <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">1</div>
+                        <div>
+                            <h3 style="margin-bottom: var(--space-sm);">Sign Up & Create Account</h3>
+                            <p style="margin-bottom: 0;">
+                                Create your ChazTalk Solutions account, select your plan, and set up billing
+                                information. Our streamlined onboarding process takes just minutes to complete.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="journey-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Configure Your AI Assistant</h3>
-                        <p>We customize your AI voice, personality, and conversation flows to match your brand. Train the system on your FAQs, products, and services to create a knowledgeable assistant.</p>
+
+                <div class="card">
+                    <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+                        <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">2</div>
+                        <div>
+                            <h3 style="margin-bottom: var(--space-sm);">Configure Your AI Assistant</h3>
+                            <p style="margin-bottom: 0;">
+                                We customize your AI voice, personality, and conversation flows to match your brand.
+                                Train the system on your FAQs, products, and services to create a knowledgeable assistant.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="journey-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Integrate with Your Systems</h3>
-                        <p>Connect ChazTalk Solutions with your phone systems, CRM, and other business tools. Our team will help ensure a smooth technical integration with minimal disruption.</p>
+
+                <div class="card">
+                    <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+                        <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">3</div>
+                        <div>
+                            <h3 style="margin-bottom: var(--space-sm);">Integrate with Your Systems</h3>
+                            <p style="margin-bottom: 0;">
+                                Connect ChazTalk Solutions with your phone systems, CRM, and other business tools.
+                                Our team will help ensure a smooth technical integration with minimal disruption.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="journey-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Launch, Monitor & Optimize</h3>
-                        <p>Go live with your AI assistant and monitor performance through our comprehensive analytics dashboard. Continuously optimize based on real conversation data.</p>
+
+                <div class="card">
+                    <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
+                        <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">4</div>
+                        <div>
+                            <h3 style="margin-bottom: var(--space-sm);">Launch, Monitor & Optimize</h3>
+                            <p style="margin-bottom: 0;">
+                                Go live with your AI assistant and monitor performance through our comprehensive
+                                analytics dashboard. Continuously optimize based on real conversation data.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -351,12 +501,19 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
         <div class="container">
-            <div class="section-title">
-                <h2>What Our Clients Say</h2>
-                <p>Success stories from businesses using ChazTalk Solutions</p>
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-quote-left"></i>
+                    Testimonials
+                </span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Success stories from businesses using ChazTalk Solutions to transform their customer service.
+                </p>
             </div>
+
             <div class="testimonial-slider">
                 <div class="testimonial-track">
                     <div class="testimonial-slide">
@@ -407,24 +564,32 @@
                     <button id="testimonial-next"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Ready to transform your customer service? Contact us today.</p>
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to transform your customer service? Contact us today for a personalized demo.
+                </p>
             </div>
+
             <div class="contact-form">
                 <form action="https://formspree.io/f/mwpqeqgz" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
                         <label for="company">Company Name</label>
@@ -432,9 +597,12 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your needs"></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-lg">Request a Demo</button>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Request a Demo
+                    </button>
                 </form>
             </div>
         </div>
@@ -443,49 +611,68 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content grid grid-cols-4">
-                <div>
-                    <a href="#" class="footer-logo">ChazTalk<span>Solutions</span></a>
-                    <p>Advanced conversational AI solutions that transform customer service experiences and drive business growth.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="footer-logo">ChazTalk</a>
+                    <p class="footer-description">
+                        Advanced conversational AI solutions that transform customer service experiences
+                        and drive business growth through intelligent voice automation.
+                    </p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/chaztalk/"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/chaztalk/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-section">
                     <h3>Company</h3>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a href="#journey">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-section">
                     <h3>Resources</h3>
                     <ul>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Case Studies</a></li>
                         <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Case Studies</a></li>
+                        <li><a href="#contact">Support</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-section">
                     <h3>Contact</h3>
-                    <div class="footer-info">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:mrcarter@chaztalk.com">mrcarter@chaztalk.com</a></p>
-                        <p><i class="fas fa-phone"></i> +1 (502)-830-7701</p>
-                        <p><i class="fas fa-robot"></i> Voice Agent: <a href="tel:+16467590995">+1 (646)-759-0995</a></p>
-                    </div>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-sm);">
+                            <i class="fas fa-envelope" style="margin-right: var(--space-xs); color: var(--color-primary);"></i>
+                            <a href="mailto:mrcarter@chaztalk.com">mrcarter@chaztalk.com</a>
+                        </li>
+                        <li style="margin-bottom: var(--space-sm);">
+                            <i class="fas fa-phone" style="margin-right: var(--space-xs); color: var(--color-primary);"></i>
+                            <a href="tel:+15028307701">+1 (502)-830-7701</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-robot" style="margin-right: var(--space-xs); color: var(--color-primary);"></i>
+                            <a href="tel:+16467590995">+1 (646)-759-0995</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 ChazTalk Solutions. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>&copy; 2025 ChazTalk Solutions. All rights reserved.
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </p>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
