@@ -422,7 +422,14 @@ header.scrolled {
   background-clip: text;
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-xs);
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: inline-block;
 }
 
 nav ul {
@@ -1117,6 +1124,15 @@ footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.footer-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
   display: inline-block;
 }
 
