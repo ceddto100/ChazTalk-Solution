@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChazTalk Solutions - AI-Powered Voice Automation Platform</title>
+    <title>ChazTalk - Conversational AI for Everyone</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Transform your customer service with AI voice automation. 24/7 support, instant lead conversion, multilingual capabilities.">
+    <meta name="description" content="ChazTalk brings conversational AI to everyone. Whether you're running a business or simplifying your daily life, our AI assistant talks, listens, and gets things done for you.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
     <header id="header">
         <div class="header-container">
             <a href="#" class="logo">
-                <i class="fas fa-robot"></i>
+                <i class="fas fa-comments"></i>
                 ChazTalk
             </a>
 
@@ -55,33 +55,67 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Dominant Blue Wavy Flow -->
     <section id="hero" class="hero">
+        <!-- Floating translucent orbs -->
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <!-- Animated wave canvas -->
+        <div class="hero-canvas-wrap">
+            <canvas id="hero-wave-canvas"></canvas>
+        </div>
+
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <i class="fas fa-sparkles"></i>
-                    AI-Powered Voice Platform
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    Conversational AI for Everyone
                 </div>
 
-                <h1>Automate Customer Calls With AI</h1>
+                <h1>Your AI That Talks, Listens & Gets Things Done</h1>
 
                 <p class="hero-subtitle">
-                    Deliver human-like customer service around the clock. Our AI boosts sales, answers questions,
-                    and resolves issues just like your best agents would—but 24/7 and at a fraction of the cost.
+                    Whether you're a business owner automating customer calls or someone who wants a smarter
+                    daily assistant, ChazTalk's conversational AI is here for you&#8202;&#8212;&#8202;24/7, natural, and effortless.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary btn-lg">
                         <i class="fas fa-rocket"></i>
-                        Request a Demo
+                        Start Free
                     </a>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-chart-line"></i>
-                        View Pricing
+                    <a href="#features" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        See How It Works
                     </a>
                 </div>
             </div>
+        </div>
+
+        <!-- SVG Wavy bottom transition -->
+        <div class="hero-waves">
+            <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="rgba(37,99,235,0.06)" d="M0,80 C360,160 720,0 1080,80 C1260,120 1380,100 1440,80 L1440,180 L0,180 Z">
+                    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+                        values="M0,80 C360,160 720,0 1080,80 C1260,120 1380,100 1440,80 L1440,180 L0,180 Z;
+                                M0,100 C300,20 600,160 960,60 C1200,0 1350,120 1440,100 L1440,180 L0,180 Z;
+                                M0,80 C360,160 720,0 1080,80 C1260,120 1380,100 1440,80 L1440,180 L0,180 Z" />
+                </path>
+                <path fill="rgba(14,165,233,0.05)" d="M0,100 C240,20 480,160 720,80 C960,0 1200,120 1440,60 L1440,180 L0,180 Z">
+                    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+                        values="M0,100 C240,20 480,160 720,80 C960,0 1200,120 1440,60 L1440,180 L0,180 Z;
+                                M0,60 C360,140 600,20 900,100 C1100,160 1300,40 1440,100 L1440,180 L0,180 Z;
+                                M0,100 C240,20 480,160 720,80 C960,0 1200,120 1440,60 L1440,180 L0,180 Z" />
+                </path>
+                <path fill="#f0f6ff" d="M0,120 C480,60 960,160 1440,100 L1440,180 L0,180 Z">
+                    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+                        values="M0,120 C480,60 960,160 1440,100 L1440,180 L0,180 Z;
+                                M0,140 C360,100 720,40 1080,140 C1260,170 1380,110 1440,120 L1440,180 L0,180 Z;
+                                M0,120 C480,60 960,160 1440,100 L1440,180 L0,180 Z" />
+                </path>
+            </svg>
         </div>
     </section>
 
@@ -93,30 +127,30 @@
                     <i class="fas fa-bolt"></i>
                     Features
                 </span>
-                <h2 class="section-title">Powerful AI Integration</h2>
+                <h2 class="section-title">AI That Works for You</h2>
                 <p class="section-description">
-                    Our cutting-edge technology seamlessly connects with your existing systems,
-                    delivering enterprise-grade voice automation.
+                    From handling business calls to helping you manage your day,
+                    ChazTalk's conversational AI adapts to your life.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 gap-xl">
-                <!-- Feature 1: Lead Conversion -->
+                <!-- Feature 1: Conversational Intelligence -->
                 <div class="feature-card">
                     <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
                         <div>
                             <div class="feature-icon">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-brain"></i>
                             </div>
-                            <h3>Boosted Lead Conversion</h3>
+                            <h3>Smart Conversations That Convert</h3>
                             <p>
-                                Generating leads is just the first step—nurturing and converting them into paying
-                                customers is where the real challenge lies. Prospective buyers often have questions,
-                                hesitations, or require additional information before making a purchase.
+                                ChazTalk doesn't just answer questions&#8202;&#8212;&#8202;it understands context, reads intent,
+                                and guides conversations toward outcomes. For businesses, that means more leads
+                                converted into customers automatically.
                             </p>
                             <p>
-                                ChazTalk Solutions helps businesses bridge this gap by providing instant, personalized
-                                engagement at critical decision-making moments, ensuring no opportunity is lost.
+                                For everyday users, it means an assistant that actually gets what you need,
+                                whether you're scheduling appointments, getting recommendations, or handling calls.
                             </p>
                         </div>
                         <div>
@@ -128,25 +162,25 @@
                     </div>
                 </div>
 
-                <!-- Feature 2: Automatic Translation -->
+                <!-- Feature 2: Natural Voice -->
                 <div class="feature-card">
                     <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
                         <div>
-                            <img src="pics/elevenlabs.jpg" alt="Eleven Labs Voice Synthesis"
+                            <img src="pics/elevenlabs.jpg" alt="Natural Voice Synthesis"
                                  style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                         </div>
                         <div>
                             <div class="feature-icon">
                                 <i class="fas fa-microphone"></i>
                             </div>
-                            <h3>Automatic Translation</h3>
+                            <h3>Sounds Human, Speaks Your Language</h3>
                             <p>
-                                Deliver human-like speech using advanced voice synthesis that automatically detects
-                                and speaks your customer's language.
+                                Powered by advanced voice synthesis, ChazTalk delivers natural-sounding conversations
+                                that auto-detect and speak your language. No robotic voices here.
                             </p>
                             <p>
-                                Engage audiences across the globe with natural-sounding voices in multiple languages
-                                and accents—perfect for creating a unified, multilingual brand experience.
+                                Whether it's a customer calling your business or you asking for help hands-free,
+                                the experience feels like talking to a real person&#8202;&#8212;&#8202;in any language.
                             </p>
                         </div>
                     </div>
@@ -159,16 +193,15 @@
                             <div class="feature-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <h3>24/7 Availability</h3>
+                            <h3>Always On, Always Ready</h3>
                             <p>
-                                Unlike human agents, ChazTalk Solutions never sleeps, providing instant, round-the-clock
-                                support to customers worldwide. Whether answering late-night inquiries, capturing leads
-                                outside business hours, or assisting international clients in different time zones,
-                                AI ensures no opportunity is missed.
+                                ChazTalk never sleeps. For businesses, that means no missed calls, no lost leads,
+                                and happy customers across every time zone. For personal use, it means help is
+                                always a conversation away.
                             </p>
                             <p>
-                                By automating routine tasks, businesses reduce operational costs while maintaining
-                                consistent, high-quality service across websites, mobile apps, and social media.
+                                Late-night question? Early-morning task? Weekend errand coordination?
+                                ChazTalk handles it all without missing a beat.
                             </p>
                         </div>
                         <div>
@@ -178,27 +211,26 @@
                     </div>
                 </div>
 
-                <!-- Feature 4: Scalable Solutions -->
+                <!-- Feature 4: Flexible & Scalable -->
                 <div class="feature-card">
                     <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
                         <div>
-                            <img src="pics/scalablesolution.jpg" alt="Scalable Solutions"
+                            <img src="pics/scalablesolution.jpg" alt="Scalable for Everyone"
                                  style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                         </div>
                         <div>
                             <div class="feature-icon">
-                                <i class="fas fa-expand-arrows-alt"></i>
+                                <i class="fas fa-layer-group"></i>
                             </div>
-                            <h3>Scalable & Adaptable Solutions</h3>
+                            <h3>Scales With You</h3>
                             <p>
-                                Whether you're a startup or an enterprise, ChazTalk Solutions scales effortlessly to
-                                match your needs—handling growing customer demand without increasing overhead.
+                                Whether you're a solo user, a startup, or an enterprise, ChazTalk grows with you.
+                                Businesses get seamless CRM and platform integrations; individuals get a personal
+                                AI that learns their preferences over time.
                             </p>
                             <p>
-                                It integrates seamlessly with CRMs, e-commerce platforms, and marketing tools, providing
-                                real-time, omnichannel support across websites, social media, and messaging apps. With
-                                99.9% uptime, faster response times, and up to 60% cost savings, ChazTalk Solutions
-                                empowers businesses to scale efficiently while delivering top-tier experiences.
+                                With 99.9% uptime, instant responses, and flexible plans, ChazTalk delivers
+                                top-tier conversational AI at every scale.
                             </p>
                         </div>
                     </div>
@@ -213,29 +245,28 @@
                 </div>
                 <h3>Choose a Number with Any Area Code</h3>
                 <p style="max-width: 700px; margin: var(--space-md) auto 0;">
-                    Establish your presence anywhere in the U.S.—whether you want a New York vibe with a
-                    <strong>646</strong> number or represent Louisville with a <strong>502</strong>.
-                    ChazTalk gives you the freedom to select a local number that matches your business
-                    identity and builds trust with your customers.
+                    Pick a local number that feels right&#8202;&#8212;&#8202;whether you want a New York vibe with a
+                    <strong>646</strong> number, represent Louisville with a <strong>502</strong>,
+                    or just have a dedicated AI line for personal use. Your number, your identity.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
+    <section class="section section-alt">
         <div class="container">
             <div class="grid grid-cols-2 gap-xl" style="align-items: center;">
                 <div>
                     <div class="section-badge" style="margin-bottom: var(--space-md);">
-                        <i class="fas fa-building"></i>
+                        <i class="fas fa-heart"></i>
                         About Us
                     </div>
-                    <h2>ChazTalk Solutions</h2>
+                    <h2>AI for Businesses & Everyday People</h2>
                     <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
-                        ChazTalk Solutions transforms your business communication with powerful conversational AI.
-                        Automate customer support, capture more leads instantly, and simplify hiring—all at a
-                        fraction of traditional staffing costs.
+                        ChazTalk was built on a simple idea: conversational AI shouldn't be just for big companies.
+                        We bring the same powerful technology to small businesses, freelancers, families, and
+                        individuals who want a smarter way to communicate and get things done.
                     </p>
 
                     <div style="margin-top: var(--space-xl);">
@@ -272,7 +303,7 @@
                 </div>
 
                 <div>
-                    <img src="pics/about.jpeg" alt="ChazTalk Solutions Platform"
+                    <img src="pics/about.jpeg" alt="ChazTalk - AI for Everyone"
                          style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-2xl);">
                 </div>
             </div>
@@ -287,9 +318,10 @@
                     <i class="fas fa-dollar-sign"></i>
                     Pricing
                 </span>
-                <h2 class="section-title">Flexible & Transparent Pricing</h2>
+                <h2 class="section-title">Plans for Every Need</h2>
                 <p class="section-description">
-                    Choose the plan that fits your business needs—from pay-as-you-go to enterprise solutions.
+                    Whether you're a business looking to automate or an individual wanting an AI assistant,
+                    we have a plan that fits.
                 </p>
             </div>
 
@@ -302,13 +334,13 @@
                     </div>
                     <div class="price">$0.65<span class="price-period">/minute</span></div>
                     <p style="text-align: center; margin-bottom: var(--space-lg);">
-                        Ideal for light or occasional use.
+                        Great for individuals or light use.
                     </p>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> No monthly commitment</li>
-                        <li><i class="fas fa-check"></i> Pay only for active AI agent time</li>
-                        <li><i class="fas fa-check"></i> Full access to voice AI</li>
-                        <li><i class="fas fa-check"></i> Standard automation workflows</li>
+                        <li><i class="fas fa-check"></i> Pay only for active AI time</li>
+                        <li><i class="fas fa-check"></i> Full conversational AI access</li>
+                        <li><i class="fas fa-check"></i> Personal or business use</li>
                     </ul>
                     <a href="#contact" class="btn btn-outline">Start Now</a>
                 </div>
@@ -317,7 +349,7 @@
                 <div class="pricing-card featured">
                     <div class="pricing-header">
                         <h3>Monthly Plan</h3>
-                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">SMB Growth Plan</p>
+                        <p style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">Best Value</p>
                     </div>
                     <div class="price">$150<span class="price-period">/month</span></div>
                     <p style="text-align: center; margin-bottom: var(--space-lg);">
@@ -328,7 +360,7 @@
                         <li><i class="fas fa-check"></i> AI voice + SMS support</li>
                         <li><i class="fas fa-check"></i> Up to 1,000 SMS messages</li>
                         <li><i class="fas fa-check"></i> 5 automation workflows</li>
-                        <li><i class="fas fa-check"></i> Standard support & dashboard</li>
+                        <li><i class="fas fa-check"></i> Dashboard & analytics</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary">Subscribe</a>
                 </div>
@@ -345,8 +377,8 @@
                     </p>
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> Tailored pricing based on usage</li>
-                        <li><i class="fas fa-check"></i> Free evaluation with sales team</li>
-                        <li><i class="fas fa-check"></i> E-commerce platforms (24/7)</li>
+                        <li><i class="fas fa-check"></i> Free evaluation with our team</li>
+                        <li><i class="fas fa-check"></i> 24/7 dedicated AI agents</li>
                         <li><i class="fas fa-check"></i> Advanced voice cloning</li>
                         <li><i class="fas fa-check"></i> Multi-language support</li>
                     </ul>
@@ -357,17 +389,17 @@
             <!-- Pricing Note -->
             <div class="card" style="margin-top: var(--space-3xl); text-align: center; padding: var(--space-xl);">
                 <h4 style="margin-bottom: var(--space-sm);">
-                    <i class="fas fa-info-circle"></i> Need help choosing a plan?
+                    <i class="fas fa-info-circle"></i> Not sure which plan is right for you?
                 </h4>
                 <p style="margin-bottom: 0;">
-                    Contact us for a personalized recommendation or to discuss custom solutions.
+                    Reach out and we'll help you find the right fit&#8202;&#8212;&#8202;whether it's for your business, your family, or just you.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- ROI Calculator -->
-    <section class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
+    <section class="section section-alt">
         <div class="container container-narrow">
             <div class="calculator">
                 <div class="section-header">
@@ -375,7 +407,7 @@
                         <i class="fas fa-calculator"></i>
                         ROI Calculator
                     </span>
-                    <h2 class="section-title">Calculate Your ROI</h2>
+                    <h2 class="section-title">Calculate Your Savings</h2>
                 </div>
 
                 <form id="roi-form" class="calculator-form">
@@ -440,7 +472,7 @@
                 </span>
                 <h2 class="section-title">Get Started in 4 Simple Steps</h2>
                 <p class="section-description">
-                    Launch your AI voice automation in minutes with our streamlined onboarding process.
+                    Setting up your AI assistant is fast and easy&#8202;&#8212;&#8202;whether you're a business or an individual.
                 </p>
             </div>
 
@@ -449,10 +481,10 @@
                     <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
                         <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">1</div>
                         <div>
-                            <h3 style="margin-bottom: var(--space-sm);">Sign Up & Create Account</h3>
+                            <h3 style="margin-bottom: var(--space-sm);">Sign Up in Seconds</h3>
                             <p style="margin-bottom: 0;">
-                                Create your ChazTalk Solutions account, select your plan, and set up billing
-                                information. Our streamlined onboarding process takes just minutes to complete.
+                                Create your ChazTalk account, pick a plan, and you're in.
+                                No complicated setup, no technical knowledge needed.
                             </p>
                         </div>
                     </div>
@@ -462,10 +494,10 @@
                     <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
                         <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">2</div>
                         <div>
-                            <h3 style="margin-bottom: var(--space-sm);">Configure Your AI Assistant</h3>
+                            <h3 style="margin-bottom: var(--space-sm);">Customize Your AI</h3>
                             <p style="margin-bottom: 0;">
-                                We customize your AI voice, personality, and conversation flows to match your brand.
-                                Train the system on your FAQs, products, and services to create a knowledgeable assistant.
+                                Tell ChazTalk what you need. Business owners set up FAQs and workflows;
+                                everyday users configure preferences and personal tasks.
                             </p>
                         </div>
                     </div>
@@ -475,10 +507,10 @@
                     <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
                         <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">3</div>
                         <div>
-                            <h3 style="margin-bottom: var(--space-sm);">Integrate with Your Systems</h3>
+                            <h3 style="margin-bottom: var(--space-sm);">Connect & Integrate</h3>
                             <p style="margin-bottom: 0;">
-                                Connect ChazTalk Solutions with your phone systems, CRM, and other business tools.
-                                Our team will help ensure a smooth technical integration with minimal disruption.
+                                Link ChazTalk to your phone, CRM, calendar, or messaging apps.
+                                We handle the technical side so you don't have to.
                             </p>
                         </div>
                     </div>
@@ -488,10 +520,10 @@
                     <div style="display: flex; align-items: flex-start; gap: var(--space-lg);">
                         <div style="width: 48px; height: 48px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: white; border-radius: var(--radius-xl); font-size: var(--font-size-xl); font-weight: 700;">4</div>
                         <div>
-                            <h3 style="margin-bottom: var(--space-sm);">Launch, Monitor & Optimize</h3>
+                            <h3 style="margin-bottom: var(--space-sm);">Go Live & Relax</h3>
                             <p style="margin-bottom: 0;">
-                                Go live with your AI assistant and monitor performance through our comprehensive
-                                analytics dashboard. Continuously optimize based on real conversation data.
+                                Your AI assistant is live. Watch it handle conversations, track results
+                                on your dashboard, and optimize as you go.
                             </p>
                         </div>
                     </div>
@@ -501,16 +533,16 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(6, 182, 212, 0.03) 100%);">
+    <section id="testimonials" class="section section-alt">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">
                     <i class="fas fa-quote-left"></i>
                     Testimonials
                 </span>
-                <h2 class="section-title">What Our Clients Say</h2>
+                <h2 class="section-title">Loved by Businesses & People Alike</h2>
                 <p class="section-description">
-                    Success stories from businesses using ChazTalk Solutions to transform their customer service.
+                    Hear from real users who use ChazTalk to transform how they communicate.
                 </p>
             </div>
 
@@ -519,7 +551,7 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="testimonial-content">
-                                <p>"ChazTalk Solutions has transformed our customer service operations. We've reduced wait times by 85% while maintaining a 95% customer satisfaction score. The AI handles routine inquiries flawlessly, allowing our team to focus on complex issues."</p>
+                                <p>"ChazTalk has transformed our customer service operations. We've reduced wait times by 85% while maintaining a 95% customer satisfaction score. The AI handles routine inquiries flawlessly, allowing our team to focus on complex issues."</p>
                             </div>
                             <div class="testimonial-author">
                                 <img src="pics/sarah.png" alt="Sarah Johnson" class="author-avatar">
@@ -533,7 +565,7 @@
                     <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="testimonial-content">
-                                <p>"As a small business owner, I couldn't afford a 24/7 call center. ChazTalk Solutions has given us enterprise-level customer support capability at a fraction of the cost. Our customers love that they can get help anytime, even outside business hours."</p>
+                                <p>"As a small business owner, I couldn't afford a 24/7 call center. ChazTalk has given us enterprise-level customer support capability at a fraction of the cost. Our customers love that they can get help anytime, even outside business hours."</p>
                             </div>
                             <div class="testimonial-author">
                                 <img src="pics/chen.png" alt="Michael Chen" class="author-avatar">
@@ -575,9 +607,9 @@
                     <i class="fas fa-envelope"></i>
                     Contact
                 </span>
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title">Let's Talk</h2>
                 <p class="section-description">
-                    Ready to transform your customer service? Contact us today for a personalized demo.
+                    Whether you're exploring ChazTalk for your business or personal use, we'd love to hear from you.
                 </p>
             </div>
 
@@ -592,16 +624,16 @@
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
-                        <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company" placeholder="Enter your company name">
+                        <label for="company">Company / Personal</label>
+                        <input type="text" id="company" name="company" placeholder="Company name or 'Personal use'">
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us what you're looking for" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
                         <i class="fas fa-paper-plane"></i>
-                        Request a Demo
+                        Send Message
                     </button>
                 </form>
             </div>
@@ -615,8 +647,8 @@
                 <div class="footer-section">
                     <a href="#" class="footer-logo">ChazTalk</a>
                     <p class="footer-description">
-                        Advanced conversational AI solutions that transform customer service experiences
-                        and drive business growth through intelligent voice automation.
+                        Conversational AI for everyone&#8202;&#8212;&#8202;helping businesses grow and
+                        everyday people get more done through intelligent voice automation.
                     </p>
                     <div class="social-links">
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -641,7 +673,7 @@
                     <ul>
                         <li><a href="documentation.html">Documentation</a></li>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#testimonials">Case Studies</a></li>
+                        <li><a href="#testimonials">Stories</a></li>
                         <li><a href="#contact">Support</a></li>
                     </ul>
                 </div>
@@ -658,7 +690,7 @@
                             <a href="tel:+15028307701">+1 (502)-830-7701</a>
                         </li>
                         <li>
-                            <i class="fas fa-robot" style="margin-right: var(--space-xs); color: var(--color-primary);"></i>
+                            <i class="fas fa-comments" style="margin-right: var(--space-xs); color: var(--color-primary);"></i>
                             <a href="tel:+16467590995">+1 (646)-759-0995</a>
                         </li>
                     </ul>
@@ -666,7 +698,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 ChazTalk Solutions. All rights reserved.
+                <p>&copy; 2025 ChazTalk. All rights reserved.
                     <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
                 </p>
             </div>
