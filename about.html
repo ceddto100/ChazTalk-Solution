@@ -54,6 +54,15 @@
             font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
         }
 
         .logo span {
@@ -422,7 +431,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">ChazTalk<span>Solutions</span></a>
+            <a href="index.html" class="logo"><img src="pics/logo.png" alt="ChazTalk Logo">ChazTalk<span>Solutions</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="#" style="color: var(--primary-color);">About</a>
@@ -538,7 +547,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-branding">
-                <a href="#" class="logo">Chaz<span>Talk</span></a>
+                <a href="index.html" class="logo"><img src="pics/logo.png" alt="ChazTalk Logo">Chaz<span>Talk</span></a>
                 <p>Smarter conversations. Stronger leads. Lower costs.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-linkedin"></i></a>

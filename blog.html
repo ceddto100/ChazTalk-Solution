@@ -21,23 +21,12 @@
       --card-color: #f8f9fa;
       --border-color: #e9ecef;
       --light-text: #6c757d;
-      --dark-background: #121212;
-      --dark-card: #1e1e1e;
-      --dark-text: #e0e0e0;
-      --dark-border: #333333;
       --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       --transition: all 0.3s ease;
       --font-heading: 'Montserrat', sans-serif;
       --font-body: 'Open Sans', sans-serif;
     }
 
-    .dark-mode {
-      --text-color: var(--dark-text);
-      --background-color: var(--dark-background);
-      --card-color: var(--dark-card);
-      --border-color: var(--dark-border);
-      --light-text: #a0a0a0;
-    }
 
     * {
       margin: 0;
@@ -141,13 +130,6 @@
       font-size: 1.5rem;
     }
 
-    .theme-toggle {
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      color: var(--text-color);
-      margin-left: 1rem;
-    }
 
     /* Main Container */
     .container {
@@ -655,9 +637,6 @@
         </ul>
       </nav>
       <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-        </button>
         <button class="mobile-menu-icon" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
           <i class="fas fa-bars"></i>
         </button>
@@ -1190,28 +1169,6 @@
         }
       });
 
-      // Theme toggle
-      const themeToggle = document.getElementById('themeToggle');
-      const body = document.body;
-      const icon = themeToggle.querySelector('i');
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-      }
-      themeToggle.addEventListener('click', function () {
-        body.classList.toggle('dark-mode');
-        if (body.classList.contains('dark-mode')) {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-          localStorage.setItem('theme', 'dark');
-        } else {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
-          localStorage.setItem('theme', 'light');
-        }
-      });
     }
 
     document.addEventListener('DOMContentLoaded', function () {
