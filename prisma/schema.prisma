@@ -1,0 +1,75 @@
+// ChazTalk Prisma schema
+// To switch to Postgres in production: change provider to "postgresql"
+// and set DATABASE_URL to your Postgres connection string.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  phone     String?
+  message   String?
+  source    String?  // landing page or path
+  utmSource String?
+  utmMedium String?
+  utmCampaign String?
+  utmTerm   String?
+  utmContent String?
+  intent    String?  // "demo" | "contact" | "sales"
+  createdAt DateTime @default(now())
+
+  @@index([email])
+  @@index([createdAt])
+}
+
+model RoiReport {
+  id              String   @id @default(cuid())
+  email           String?
+  monthlyCalls    Int
+  avgHandleMin    Int
+  agentHourlyCost Float
+  automationRate  Float
+  hoursSaved      Float
+  monthlySavings  Float
+  annualSavings   Float
+  paybackMonths   Float
+  createdAt       DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+model Event {
+  id        String   @id @default(cuid())
+  name      String   // e.g. "cta_click", "form_submit", "calculator_run", "demo_start"
+  path      String?
+  sessionId String?
+  payload   String?  // JSON-stringified blob
+  userAgent String?
+  utmSource String?
+  utmMedium String?
+  utmCampaign String?
+  createdAt DateTime @default(now())
+
+  @@index([name])
+  @@index([createdAt])
+}
+
+model DemoSession {
+  id         String   @id @default(cuid())
+  scenario   String   // "support" | "lead" | "personal"
+  transcript String   // JSON array of {role, text, ts}
+  outcome    String?  // "qualified" | "resolved" | "abandoned"
+  email      String?
+  createdAt  DateTime @default(now())
+
+  @@index([scenario])
+}
