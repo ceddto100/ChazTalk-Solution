@@ -6,39 +6,39 @@ export interface Feature {
 
 export const features: Feature[] = [
   {
-    title: "Voice + Chat in one brain",
+    title: "AI voice agents",
     description:
-      "ChazTalk handles phone calls, web chat, SMS, and WhatsApp from a single assistant with consistent tone and memory.",
+      "Answer inbound phone calls with natural, branded voice conversations that collect details, respond accurately, and keep callers moving.",
     icon: "🎙️",
   },
   {
-    title: "24/7 instant response",
+    title: "24/7 call handling",
     description:
-      "Pick up every inquiry in under 2 seconds — nights, weekends, and surges included. No more missed leads.",
+      "Pick up every inquiry in under 2 seconds — nights, weekends, holidays, and demand spikes included. No more missed opportunities.",
     icon: "⏱️",
   },
   {
-    title: "Smart lead qualification",
+    title: "Lead capture + qualification",
     description:
-      "Custom scoring, budget/authority/need/timing capture, and CRM hand-off the moment a hot lead surfaces.",
+      "Ask the right questions, capture contact details, score fit, and push qualified leads into your CRM with call summaries attached.",
     icon: "🎯",
   },
   {
-    title: "Support automation",
+    title: "Appointment scheduling",
     description:
-      "Resolve up to 70% of tier-1 tickets with grounded answers from your docs, policies, and product data.",
+      "Book, reschedule, and confirm appointments from the call using calendar availability, routing rules, and automated reminders.",
+    icon: "📅",
+  },
+  {
+    title: "Customer support automation",
+    description:
+      "Handle common questions about services, policies, pricing, billing, and status updates while escalating sensitive issues to your team.",
     icon: "🛟",
   },
   {
-    title: "Live transcripts + analytics",
+    title: "Workflow automation",
     description:
-      "Every conversation is logged, transcribed, and tagged. See intent trends and revenue impact in real time.",
-    icon: "📊",
-  },
-  {
-    title: "Plug into your stack",
-    description:
-      "Native HubSpot, Salesforce, Zendesk, Slack, Google Calendar, and Zapier — plus a typed REST API.",
+      "Trigger texts, emails, CRM updates, tickets, Slack alerts, and follow-up sequences automatically after each voice interaction.",
     icon: "🔌",
   },
 ];
@@ -46,26 +46,26 @@ export const features: Feature[] = [
 export const howItWorks = [
   {
     step: "01",
-    title: "Connect your knowledge",
+    title: "Map your call flow",
     description:
-      "Point ChazTalk at your website, docs, FAQs, and CRM. We index everything in minutes — no engineers needed.",
+      "We learn how your team answers calls, qualifies leads, books appointments, handles support, and decides when to escalate.",
   },
   {
     step: "02",
-    title: "Shape the persona",
+    title: "Build the voice agent",
     description:
-      "Tune voice, tone, hours, escalation rules, and qualification questions in a no-code studio.",
+      "We design the agent's voice, tone, knowledge, call scripts, qualification questions, and guardrails around your business rules.",
   },
   {
     step: "03",
-    title: "Launch on every channel",
+    title: "Connect your systems",
     description:
-      "Drop in a chat widget, forward your phone line, and connect WhatsApp/SMS — ChazTalk is live the same day.",
+      "Forward calls and connect your CRM, calendar, helpdesk, SMS, email, and automation tools so every conversation creates action.",
   },
   {
     step: "04",
-    title: "Measure and improve",
+    title: "Optimize performance",
     description:
-      "Watch deflection, CSAT, and pipeline lift. Approve weekly suggestions to keep the assistant sharp.",
+      "Review transcripts, lead quality, booked appointments, handoffs, and workflow outcomes so the automation keeps improving.",
   },
 ];

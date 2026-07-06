@@ -11,8 +11,8 @@ export function PricingPreview() {
         <SectionHeader
           center
           eyebrow="Pricing"
-          title="Simple, conversation-based pricing"
-          description="Unlimited team seats on every plan. Pay for conversations, not chairs."
+          title="Simple pricing for voice AI automation"
+          description="Start with automated call handling, then expand into lead routing, appointment scheduling, support, and workflow automation."
         />
         <PricingTable plans={plans} />
         <div className="mt-8 text-center">

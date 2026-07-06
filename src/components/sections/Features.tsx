@@ -8,8 +8,8 @@ export function Features() {
       <Container>
         <SectionHeader
           eyebrow="Features"
-          title="One assistant. Every channel. Zero downtime."
-          description="ChazTalk is grounded in your knowledge, tuned to your voice, and built for the workflows your team already loves."
+          title="AI voice agents backed by agency-built automation."
+          description="Chat Talk Solutions designs, launches, and connects voice AI agents to the tools your team already uses."
         />
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (

@@ -30,12 +30,12 @@ export const demoScripts: Record<string, DemoScript> = {
   support: {
     id: "support",
     title: "SMB Support",
-    blurb: "A customer reaches out after hours about a billing issue.",
+    blurb: "A customer calls after hours about a billing issue.",
     start: "intro",
     nodes: {
       intro: {
         id: "intro",
-        bot: "Hi! Thanks for reaching out to Bayside Dental — I'm Chaz, the after-hours assistant. How can I help tonight?",
+        bot: "Thanks for calling Bayside Dental — I'm the AI voice agent handling after-hours calls. How can I help tonight?",
         choices: [
           { label: "I have a billing question", next: "billing" },
           { label: "I need to reschedule", next: "reschedule" },
@@ -91,12 +91,12 @@ export const demoScripts: Record<string, DemoScript> = {
   lead: {
     id: "lead",
     title: "Lead Qualification",
-    blurb: "A prospect arrives on a SaaS site at 11 PM.",
+    blurb: "A prospect calls after seeing an ad at 11 PM.",
     start: "intro",
     nodes: {
       intro: {
         id: "intro",
-        bot: "Welcome to Northwind! I can help you evaluate fit in 60 seconds. What brings you in?",
+        bot: "Thanks for calling Northwind. I can qualify your request and help schedule the right next step. What brings you in?",
         choices: [
           { label: "Comparing vendors", next: "vendor" },
           { label: "Replacing an existing tool", next: "replace" },
@@ -151,26 +151,26 @@ export const demoScripts: Record<string, DemoScript> = {
   personal: {
     id: "personal",
     title: "Personal Assistant",
-    blurb: "Your own assistant handles a calendar conflict.",
+    blurb: "A completed call triggers scheduling and follow-up automation.",
     start: "intro",
     nodes: {
       intro: {
         id: "intro",
-        bot: "Heads up — you have a conflict at 3 PM Thursday (gym + client call). Want me to resolve?",
+        bot: "A qualified caller needs an appointment, CRM update, and follow-up reminder. What should happen next?",
         choices: [
-          { label: "Move the gym", next: "moved" },
-          { label: "Reschedule the call", next: "reschedule_call" },
+          { label: "Book appointment", next: "moved" },
+          { label: "Send follow-up", next: "reschedule_call" },
         ],
       },
       moved: {
         id: "moved",
-        bot: "Done — gym moved to 6 PM, your trainer is notified.",
-        end: { outcome: "resolved", message: "Resolved without leaving your chat." },
+        bot: "Done — the appointment is booked, the CRM record is updated, and the confirmation text is sent.",
+        end: { outcome: "resolved", message: "Workflow completed automatically after the call." },
       },
       reschedule_call: {
         id: "reschedule_call",
-        bot: "I proposed Friday 10 AM to the client and CC'd you. I'll confirm when they reply.",
-        end: { outcome: "resolved", message: "Outbound email sent + tracker set." },
+        bot: "Done — the follow-up email and SMS were sent, and a callback task was assigned to the sales owner.",
+        end: { outcome: "resolved", message: "Follow-up workflow triggered from the voice interaction." },
       },
     },
   },

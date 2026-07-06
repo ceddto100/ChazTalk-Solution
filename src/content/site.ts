@@ -1,8 +1,8 @@
 export const site = {
-  name: "ChazTalk",
-  tagline: "AI conversations that never sleep.",
+  name: "Chat Talk Solutions",
+  tagline: "Voice AI agents for businesses.",
   description:
-    "ChazTalk is an AI conversational assistant for businesses and individuals — voice and chat automation that captures leads, resolves support, and runs your day, 24/7.",
+    "Chat Talk Solutions is an AI agency that builds voice AI agents and automation systems to answer calls, qualify leads, schedule appointments, support customers, and trigger follow-up workflows automatically.",
   url: "https://chaztalk.com",
   socials: {
     twitter: "@chaztalk",
@@ -18,7 +18,7 @@ export const nav = {
       children: [
         { label: "SMB Support", href: "/solutions/smb-support" },
         { label: "Lead Qualification", href: "/solutions/lead-qualification" },
-        { label: "Personal Assistant", href: "/solutions/personal-assistant" },
+        { label: "Workflow Automation", href: "/solutions/personal-assistant" },
       ],
     },
     { label: "Pricing", href: "/pricing" },

@@ -8,8 +8,8 @@ export function DemoSection() {
       <Container>
         <SectionHeader
           eyebrow="Try it now"
-          title="A 60-second taste of ChazTalk."
-          description="Pick a scenario and play through a real conversation. No signup required."
+          title="A 60-second taste of an AI voice agent."
+          description="Pick a scenario and see how an automated phone conversation can capture details, route requests, and trigger follow-up."
         />
         <DemoExperience />
       </Container>

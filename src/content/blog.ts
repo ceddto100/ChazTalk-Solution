@@ -58,7 +58,7 @@ An always-on assistant captures the intent, qualifies the lead, and books the fo
     tag: "Sales",
     body: `BANT (Budget, Authority, Need, Timing) fell out of fashion because reps couldn't ask the questions without sounding like a script. Conversational AI doesn't have that problem.
 
-ChazTalk weaves qualification into a natural flow and scores the result automatically — every time.`,
+Chat Talk Solutions weaves qualification into a natural flow and scores the result automatically — every time.`,
   },
 ];
 
