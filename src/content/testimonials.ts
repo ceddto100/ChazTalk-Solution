@@ -9,7 +9,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "We went from missing 1 in 4 after-hours calls to capturing every single one. ChazTalk paid for itself in the first three weeks.",
+      "We went from missing 1 in 4 after-hours calls to capturing every single one. Chat Talk Solutions paid for itself in the first three weeks.",
     name: "Maya Alvarez",
     role: "Owner",
     company: "Bayside Dental Group",

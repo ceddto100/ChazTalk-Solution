@@ -10,14 +10,13 @@ export function Hero() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="animate-fade-up">
             <span className="chip mb-5">
-              <span className="h-2 w-2 rounded-full bg-emerald-500" /> Live · 24/7 · &lt;2s response
+              <span className="h-2 w-2 rounded-full bg-emerald-500" /> Voice AI · 24/7 call handling · &lt;2s response
             </span>
             <h1 className="h-display">
-              AI conversations that <span className="gradient-text">never sleep.</span>
+              Voice AI agents that <span className="gradient-text">never miss a call.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-ink-600">
-              ChazTalk answers every call, chat, and message — qualifying leads, resolving support,
-              and running your day around the clock. Set it up before lunch. Sleep tonight.
+              Chat Talk Solutions is an AI agency that builds voice agents and automation systems for businesses. Answer calls, qualify leads, schedule appointments, resolve customer questions, and trigger follow-up workflows automatically.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <TrackedLink
@@ -39,7 +38,7 @@ export function Hero() {
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 text-left">
               <Stat k="<2s" v="response time" />
-              <Stat k="70%" v="ticket deflection" />
+              <Stat k="70%" v="routine calls automated" />
               <Stat k="2.1×" v="qualified leads" />
             </dl>
           </div>
@@ -53,15 +52,15 @@ export function Hero() {
                     <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
                     <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
                   </div>
-                  <span className="text-xs font-semibold text-ink-500">live · web chat</span>
+                  <span className="text-xs font-semibold text-ink-500">live · AI voice call</span>
                 </div>
                 <div className="mt-4 space-y-3 text-sm">
-                  <Msg role="user">Hey, do you have anyone available tonight for a tooth chip?</Msg>
+                  <Msg role="user">Caller: Do you have anyone available tonight for a chipped tooth?</Msg>
                   <Msg role="bot">
                     Yes — Dr. Alvarez is on call. I can warm-transfer you now or book first thing
                     tomorrow at 8 AM. Which works?
                   </Msg>
-                  <Msg role="user">Transfer me please.</Msg>
+                  <Msg role="user">Caller: Transfer me please.</Msg>
                   <Msg role="bot">
                     Connecting in 4 seconds. I've forwarded your insurance and last visit notes.
                   </Msg>
@@ -70,7 +69,7 @@ export function Hero() {
                   <span className="grid h-6 w-6 place-items-center rounded-full bg-brand-100 text-brand-700">
                     AI
                   </span>
-                  ChazTalk · resolved in 3 turns · CSAT 5/5
+                  Voice agent · call handled in 3 turns · CRM updated
                 </div>
               </div>
             </div>

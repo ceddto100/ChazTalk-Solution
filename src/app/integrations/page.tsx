@@ -5,7 +5,7 @@ import { integrations } from "@/content/integrations";
 
 export const metadata: Metadata = {
   title: "Integrations",
-  description: "Native CRM, helpdesk, calendar, and telephony integrations for ChazTalk.",
+  description: "Native CRM, helpdesk, calendar, and telephony integrations for Chat Talk Solutions.",
 };
 
 export default function IntegrationsPage() {

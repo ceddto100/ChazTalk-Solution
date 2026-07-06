@@ -5,7 +5,7 @@ import { SectionHeader } from "@/components/ui/Section";
 export const metadata: Metadata = {
   title: "Security & Trust",
   description:
-    "How ChazTalk protects your data: SOC 2 Type II, GDPR, HIPAA-aligned controls, encryption, and isolation.",
+    "How Chat Talk Solutions protects your data: SOC 2 Type II, GDPR, HIPAA-aligned controls, encryption, and isolation.",
 };
 
 const pillars = [

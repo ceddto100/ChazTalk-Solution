@@ -36,7 +36,7 @@ export function Footer() {
       </Container>
       <div className="border-t border-ink-100">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 md:flex-row">
-          <p className="text-xs text-ink-500">© {year} ChazTalk. All rights reserved.</p>
+          <p className="text-xs text-ink-500">© {year} Chat Talk Solutions. All rights reserved.</p>
           <div className="flex items-center gap-4 text-xs text-ink-500">
             <Link href="/security">Security</Link>
             <Link href="/contact">Contact</Link>

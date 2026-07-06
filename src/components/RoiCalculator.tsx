@@ -52,12 +52,12 @@ export function RoiCalculator() {
       <div className="card lg:col-span-3">
         <h3 className="text-lg font-semibold">Your numbers</h3>
         <p className="mt-1 text-sm text-ink-600">
-          Estimate the savings of automating tier-1 conversations with ChazTalk.
+          Estimate the savings of automating inbound calls, qualification, scheduling, and routine support with Chat Talk Solutions.
         </p>
 
         <div className="mt-6 space-y-5">
           <SliderRow
-            label="Monthly conversations"
+            label="Monthly inbound calls"
             value={monthlyCalls}
             min={100}
             max={50000}

@@ -63,7 +63,7 @@ export function LeadForm({ defaultIntent = "contact", source, compact }: Props) 
         </div>
         <h3 className="text-lg font-semibold">Thanks — we're on it.</h3>
         <p className="mt-1 text-sm text-ink-600">
-          A ChazTalk specialist will reach out within one business day.
+          A Chat Talk Solutions specialist will reach out within one business day.
         </p>
         <button
           className="btn-secondary mt-4"
@@ -124,14 +124,14 @@ export function LeadForm({ defaultIntent = "contact", source, compact }: Props) 
 
       <div>
         <label htmlFor="message" className="label">
-          What would you like ChazTalk to handle?
+          What calls or workflows should your AI agent handle?
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
           className="textarea"
-          placeholder="Tell us about your volume, channels, and goals."
+          placeholder="Tell us about your call volume, lead flow, scheduling, support, or workflow goals."
         />
       </div>
 
@@ -145,7 +145,7 @@ export function LeadForm({ defaultIntent = "contact", source, compact }: Props) 
         {status === "loading" ? "Sending…" : intent === "demo" ? "Book my demo" : "Send"}
       </button>
       <p className="text-xs text-ink-500">
-        By submitting, you agree to be contacted about ChazTalk. We don't share your info.
+        By submitting, you agree to be contacted by Chat Talk Solutions. We don't share your info.
       </p>
     </form>
   );

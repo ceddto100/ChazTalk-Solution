@@ -1,9 +1,8 @@
-# ChazTalk
+# Chat Talk Solutions
 
 > AI conversations that never sleep.
 
-A production-oriented marketing + lead-generation site for **ChazTalk** — an AI conversational
-assistant for businesses and individuals (voice + chat automation, lead capture, support
+A production-oriented marketing + lead-generation site for **Chat Talk Solutions** — an AI agency website promoting voice AI agents, automated phone conversations, lead capture, support
 automation, and personal productivity).
 
 This is a from-scratch rebuild using a modern Next.js architecture. The previous static site has

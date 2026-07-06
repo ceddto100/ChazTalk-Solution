@@ -9,7 +9,7 @@ export function RoiSection() {
         <SectionHeader
           eyebrow="ROI Calculator"
           title="See your payback in seconds."
-          description="Move the sliders to estimate hours saved and dollars freed across your phone, chat, and ticket queue."
+          description="Move the sliders to estimate hours saved and revenue recovered by automating inbound calls, lead capture, scheduling, and routine support."
         />
         <RoiCalculator />
       </Container>

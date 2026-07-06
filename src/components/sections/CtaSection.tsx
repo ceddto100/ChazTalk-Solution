@@ -7,15 +7,14 @@ export function CtaSection() {
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="h-section text-white">Ready to never miss another customer?</h2>
+            <h2 className="h-section text-white">Ready to stop missing calls and leads?</h2>
             <p className="mt-3 max-w-xl text-brand-50/90">
-              Book a 20-minute demo. We'll bring an assistant trained on your website live, and
-              show you the conversations it would have handled last night.
+              Book a 20-minute demo. We'll map your call flow, show how a voice agent would answer real customer questions, and outline the automations that happen after each call.
             </p>
             <ul className="mt-6 space-y-2 text-sm text-brand-50/90">
               {[
                 "Set up in a day, not a quarter",
-                "Connected to your CRM and calendar",
+                "Connected to your phone system, CRM, and calendar",
                 "No long-term contracts",
               ].map((i) => (
                 <li key={i} className="flex items-start gap-2">

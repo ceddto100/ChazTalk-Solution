@@ -6,7 +6,7 @@ import { posts } from "@/content/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Operator-grade posts on AI conversation design, support automation, and growth.",
+  description: "Operator-grade posts on voice AI, call automation, support automation, and growth.",
 };
 
 export default function BlogPage() {
@@ -16,8 +16,8 @@ export default function BlogPage() {
       <Container className="py-16 md:py-24">
         <SectionHeader
           eyebrow="Blog"
-          title="Operator-grade notes on AI conversations."
-          description="Field reports, playbooks, and short reads on running ChazTalk in the real world."
+          title="Operator-grade notes on voice AI automation."
+          description="Field reports, playbooks, and short reads on using AI voice agents and workflow automation in the real world."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {sorted.map((p) => (

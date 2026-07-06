@@ -15,10 +15,9 @@ export default function ContactPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="eyebrow">Get in touch</p>
-            <h1 className="mt-3 h-display">Let's build your assistant.</h1>
+            <h1 className="mt-3 h-display">Let's build your voice AI agent.</h1>
             <p className="mt-4 text-lg text-ink-600">
-              Tell us about your channels, volume, and goals. We'll bring a tailored demo trained
-              on your knowledge base.
+              Tell us about your call volume, lead flow, scheduling needs, and support workflows. We'll bring a tailored voice AI automation plan trained on your business.
             </p>
             <ul className="mt-8 space-y-3 text-sm text-ink-700">
               <li className="flex gap-3">
@@ -35,7 +34,7 @@ export default function ContactPage() {
               </li>
               <li className="flex gap-3">
                 <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-50 text-brand-700">
-                  💬
+                  ☎️
                 </span>
                 Prefer email? Write{" "}
                 <a className="text-brand-700 hover:underline" href="mailto:hello@chaztalk.com">

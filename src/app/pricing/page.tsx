@@ -7,7 +7,7 @@ import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Simple, conversation-based pricing for ChazTalk. Unlimited seats on every plan.",
+  description: "Pricing for Chat Talk Solutions voice AI agents, call automation, lead capture, scheduling, and workflow automation.",
 };
 
 export default function PricingPage() {
@@ -18,8 +18,8 @@ export default function PricingPage() {
           <SectionHeader
             center
             eyebrow="Pricing"
-            title="Pay for conversations, not seats."
-            description="Every plan includes unlimited team members, voice + chat, and the full integration library."
+            title="Pricing built around voice automation outcomes."
+            description="Every plan includes unlimited team members and a path from AI call handling to CRM, calendar, support, and follow-up automation."
           />
           <PricingTable plans={plans} />
         </Container>
@@ -42,9 +42,9 @@ export default function PricingPage() {
               </thead>
               <tbody className="divide-y divide-ink-100">
                 {[
-                  ["Chat widget", true, true, true],
-                  ["Voice channel", false, true, true],
-                  ["SMS + WhatsApp", false, true, true],
+                  ["AI voice agent", true, true, true],
+                  ["Advanced call flows", false, true, true],
+                  ["SMS follow-up", false, true, true],
                   ["CRM integrations", false, true, true],
                   ["Custom qualification flows", false, true, true],
                   ["SSO + SCIM", false, false, true],
