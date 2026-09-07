@@ -40,6 +40,14 @@ export function Footer() {
           <div className="flex items-center gap-4 text-xs text-ink-500">
             <Link href="/security">Security</Link>
             <Link href="/contact">Contact</Link>
+            <a
+              href="/outbound-engine.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-violet-500 px-3 py-1 font-semibold text-white shadow-[0_0_16px_rgba(99,102,241,0.4)]"
+            >
+              🚀 Outbound Engine
+            </a>
             <span aria-hidden>·</span>
             <span>Made for businesses that never sleep.</span>
           </div>

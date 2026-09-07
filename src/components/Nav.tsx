@@ -62,6 +62,14 @@ export function Nav() {
           )}
         </nav>
         <div className="hidden items-center gap-2 md:flex">
+          <a
+            href="/outbound-engine.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-gradient-to-r from-cyan-400 via-indigo-500 to-violet-500 px-3 py-2 text-sm font-semibold text-white shadow-[0_0_20px_rgba(99,102,241,0.45)] transition hover:shadow-[0_0_28px_rgba(34,211,238,0.6)]"
+          >
+            🚀 Outbound Engine
+          </a>
           <Link href="/contact" className="btn-ghost text-sm">
             Sign in
           </Link>
@@ -110,6 +118,15 @@ export function Nav() {
                 </Link>
               ),
             )}
+            <a
+              href="/outbound-engine.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-2 w-full rounded-lg bg-gradient-to-r from-cyan-400 via-indigo-500 to-violet-500 px-3 py-2 text-center text-sm font-semibold text-white shadow-[0_0_20px_rgba(99,102,241,0.45)]"
+            >
+              🚀 Outbound Engine
+            </a>
             <Link
               href="/contact?intent=demo"
               onClick={() => setOpen(false)}
