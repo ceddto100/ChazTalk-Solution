@@ -35,14 +35,13 @@ export function LeadForm({ defaultIntent = "contact", source, compact }: Props) 
     };
 
     try {
-      const res = await fetch("/api/leads", {
+      const res = await fetch("https://formspree.io/f/mnpqgqpk", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
-      const json = await res.json();
-      if (!res.ok || !json.ok) {
-        setError(json.error || "Something went wrong. Please try again.");
+      if (!res.ok) {
+        setError("Something went wrong. Please try again.");
         setStatus("error");
         return;
       }

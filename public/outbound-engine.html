@@ -605,8 +605,8 @@
 </div>
 
 <script>
-  // ── Wire this to your Make.com webhook to go live ──────────────
-  const WEBHOOK_URL = ""; // e.g. "https://hook.us1.make.com/xxxxxxxxxxxxx"
+  // ── Formspree endpoint ───────────────────────────────────────────
+  const WEBHOOK_URL = "https://formspree.io/f/mnpqgqpk";
   // ───────────────────────────────────────────────────────────────
 
   const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -786,7 +786,7 @@
         try {
           await fetch(WEBHOOK_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(data)
           });
         } catch (err) { /* confirmation still shown; retry handled in the scenario */ }
